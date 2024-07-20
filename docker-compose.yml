@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  springapp:
+    image: pavan:5
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pavan_medblocks_c
+    ports:
+      - "8083:8083"
